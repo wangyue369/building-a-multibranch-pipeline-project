@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello world!"'
+                sh 'echo "Hello world!">>../deploy.log'
+			
             }
         }
     }
